@@ -5,9 +5,14 @@
 This is Titanic survivor data from kaggle (Very Well-known!).
 The data separated two, one is __training set__ and the other is __test set__.
 Both data sets include features of the passengers(like sex, age, ticket-class...).
-The differences of data sets are training set has survival and the other has not. 
-Training set will be machine-learned.
-and test set is iterally speaking tested.
+\n
+The differences of data sets are training set has survival and the other has not.
+Only kaggle site i can check the test set, so i separate training set, one i used training set and the other i used test set.
+\n
+but they give the gender_submission.csv.
+This is a set of predictions that assume all and only female passengers survive, as an example of what a submission file should look like.
+so i checked this data to calculate the accuracy.
+
 
 ### Data information
 I manufactured the kaggle datas because don't need variables.
@@ -23,3 +28,7 @@ Here is the Variables i used.
 | parch         | the number of parents/children abroad the titanic ||
 | fare          | Passenger fare | |
 | embarked      | Port of embarkation | Southampton = 0, Cherbourg = 1, Queenstown = 2|
+
+
+
+
