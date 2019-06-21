@@ -46,14 +46,11 @@ and It is much better than 1 big trees' accuracy(89%)!
 
 ## Errors
 1.
-<br/>
 When I process make_trees(), If step > 12 , I got an error below.
 <br/>
-`UnboundLocalError: local variable 'threshold_' referenced before assignment`
+ `UnboundLocalError: local variable 'threshold_' referenced before assignment`
 <br/>
 I don't know why i get this error.
-<br/>
-<br/>
 2. 
 I have done random and separate training data. But when check the accuracy, i got a very bad accuracy.
 so i can't uploaded.
