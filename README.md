@@ -13,6 +13,10 @@ and test set is iterally speaking tested.
 I manufactured the kaggle datas because don't need variables.
 Here is the Variables i used.
 
+| This | is   |
+|------|------|
+|   a  | table|
+
 \begin{center}
 \begin{tabular}{ |c|c|c| } 
  \hline
