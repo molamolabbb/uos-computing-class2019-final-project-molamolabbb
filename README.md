@@ -37,6 +37,6 @@ This method can be reduce overtraining.
 <br/>
 _Several normal people are better than 1 smart person!_
 <br/>
-\includegraphics[scale=0.65]{Demonstration-of-the-random-Forest-methodology.png}
+![alt text](https://www.researchgate.net/profile/Evaldas_Vaiciukynas/publication/301638643/figure/fig1/AS:355471899807744@1461762513154/Architecture-of-the-random-forest-model.png)
 
 
