@@ -38,4 +38,16 @@ _Several normal people are better than 1 smart person!_
 <br/>
 ![alt text](https://www.researchgate.net/profile/Evaldas_Vaiciukynas/publication/301638643/figure/fig1/AS:355471899807744@1461762513154/Architecture-of-the-random-forest-model.png)
 
-
+## Errors
+1.
+<\br>
+When I process make_trees(), If step > 12 , I got an error below.
+<\br>
+`UnboundLocalError: local variable 'threshold_' referenced before assignment`
+<\br>
+I don't know why i get this error.
+<\br>
+<\br>
+2. 
+I have done random and separate training data. But when check the accuracy, i got a very bad accuracy.
+so i can't uploaded.
