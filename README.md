@@ -1,57 +1,44 @@
-# Final-project : Who will be the Survivor? 
+# Final-project 
 ### Jua Kim
 
 ## Datas
-This is Titanic survivor data from kaggle (Very Well-known!).
-The data separated two, one is __training set__ and the other is __test set__.
-Both data sets include features of the passengers(like sex, age, ticket-class...).
+I used a iris_data in sckit-learn.
 <br/>
-The differences of data sets are training set has survival and the other has not.
+The number of iris data is 150.
 <br/>
-but they give the gender_submission.csv.
-This is a set of predictions that assume all and only female passengers survive.
-so i checked this data to calculate the accuracy.
+so i seperate the data; train : 100, test :50.
 
 
 ### Data information
-I manufactured the kaggle datas because don't need variables.
-Here is the Variables i used.
+0 : 'setosa'
+<br/>
+1 : 'versicolor'
+<br/>
+2 : 'virginica'
+<br/>
 
-| __variables__ | __Definition__ | meaning of the number |
-|---------------|----------------|-----------------------|
-| survival      | Survival       | 0 = NO, 1 = Yes       |
-| pclass        | Ticket class   |1 = 1st, 2 = 2nd, 3 = 3rd|
-| sex           |     Sex        |  male = 0, female = 1 |
-| age           |  age           |missig value = mean value(29.6)|
-| sibsp         | the number of siblings/spouses abroad the titanic||
-| parch         | the number of parents/children abroad the titanic ||
-| fare          | Passenger fare | |
-| embarked      | Port of embarkation | Southampton = 0, Cherbourg = 1, Queenstown = 2|
+| __variables__ |
+|---------------|
+| sepal length  |
+| sepal width   | 
+| petal length  | 
+| petal width   |  
+
+4 dimension
 
 ## Machine learning technique : Random Forest
-I choose the __random forest__ to predict the survivor. 
-I made the random forest to upgrade the decision trees(last time i made).
-Random forest makes several decision trees randomly, and have them "vote" on the output.
+I choose the __random forest__ to predict the kind of iris.
+First, load the iris data and make random samples.
+Second, separate the test(50) and train datas(100). 
+and then, make trees(random_forest) with train_data with step. The more steps, the bigger trees(the less # of trees).
+Random forest makes several decision trees randomly. 
+forest_classifier take votes with trees and counts how many vote they get.
+Finally, we can get the accuracy checking test labels and votes.
+I can see the result changing the step. 
+<br/>
 This method can be reduce overtraining.
 <br/>
-_Several normal people are better than 1 smart person!_
-<br/>
-![alt text](https://www.researchgate.net/profile/Evaldas_Vaiciukynas/publication/301638643/figure/fig1/AS:355471899807744@1461762513154/Architecture-of-the-random-forest-model.png)
-<br/>
+
 ## result
-
-I run the random forest in this data.
-I got 94% accuracy to predict the survivor. 
-and It is much better than 1 big trees' accuracy(89%)!
-
-## Errors
-1.
-When I process make_trees(), If step > 12 , I got an error below.
-<br/>
- `UnboundLocalError: local variable 'threshold_' referenced before assignment`
-<br/>
-I don't know why i get this error.
-<br/>
-2. 
-I have done random and separate training data. But when check the accuracy, i got a very bad accuracy.
-so i can't uploaded.
+I got about 97% accuracy.
+If a tree is too big, its accuracy reduces.
